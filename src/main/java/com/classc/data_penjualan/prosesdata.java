@@ -13,7 +13,7 @@ import org.springframework.ui.Model;
  * @author DELL
  */
 @Controller
-public class prosesdata {
+public class Prosesdata {
     
     int cost;
     public int early_cost(String a, String b){
@@ -30,14 +30,14 @@ public class prosesdata {
     public String diskon(){
         String dis;
         
-        if (cost <= 16000){
+        if (cost <= 10000){
             dis = "0%";
         }
-        else if( cost > 16000 && cost <= 25000){
-            dis = "10%";
+        else if( cost > 10000 && cost <= 50000){
+            dis = "5%";
         }
         else {
-            dis = "15%";
+            dis = "10%";
         }
         return dis;
     }
@@ -45,14 +45,14 @@ public class prosesdata {
     public int harga_diskon(){
         int dis_pri;
         
-        if (cost <= 16000){
+        if (cost <= 10000){
             dis_pri = cost * 0 / 100;
         }
-        else if( cost > 16000 && cost <= 25000){
-            dis_pri = cost * 10 / 100;
+        else if( cost > 10000 && cost <= 50000){
+            dis_pri = cost * 5 / 100;
         }
         else {
-            dis_pri = cost * 15 / 100;
+            dis_pri = cost * 10 / 100;
         }
         
         return dis_pri;

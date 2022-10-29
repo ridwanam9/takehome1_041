@@ -13,7 +13,7 @@ import org.springframework.ui.Model;
  * @author DELL
  */
 @Controller
-public class inputdata {
+public class Inputdata {
     
     String nama_barang;
     String harga_kilo;

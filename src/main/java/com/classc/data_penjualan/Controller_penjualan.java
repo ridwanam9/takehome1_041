@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 /**
  *
  * @author DELL
@@ -16,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class Controller_penjualan {
     
-    prosesdata pc = new prosesdata();
-    inputdata iut = new inputdata();
+    Prosesdata pc = new Prosesdata();
+    Inputdata iut = new Inputdata();
     
     @RequestMapping("/act")
     public String lihatdata(HttpServletRequest data, Model model){
@@ -35,7 +36,7 @@ public class Controller_penjualan {
         model.addAttribute("harga_total", pc.harga_total());
         
         
-        return "home";
+        return "home_penjualan";
     }
     
 }
