@@ -4,9 +4,9 @@
  */
 package com.classc.data_penjualan;
 
-import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+
 
 /**
  *
@@ -58,12 +58,26 @@ public class Prosesdata {
         return dis_pri;
     }
     
+    int total_pri;
     public int harga_total(){
-        int total_pri = 0;
+        total_pri = 0;
         
         total_pri = cost - harga_diskon();
         
         return total_pri;
     }
+    
+//    public int kembalian(){
+//    
+//        int kembali = 0;
+//        
+//        int uang_anda = 0;
+//        
+//        
+//        
+//        return kembali;
+//        
+//    }
+    
     
 }

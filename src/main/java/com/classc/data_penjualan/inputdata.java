@@ -21,7 +21,6 @@ public class Inputdata {
     
     public void input(HttpServletRequest data, Model model)
     {
-        
         nama_barang = data.getParameter("var_name");
         harga_kilo = data.getParameter("var_cost");
         jumlah_beli = data.getParameter("var_amount");

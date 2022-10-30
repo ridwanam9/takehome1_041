@@ -20,7 +20,7 @@ public class Controller_penjualan {
     Prosesdata pc = new Prosesdata();
     Inputdata iut = new Inputdata();
     
-    @RequestMapping("/act")
+    @RequestMapping("/hai")
     public String lihatdata(HttpServletRequest data, Model model){
     
         iut.input(data, model);
